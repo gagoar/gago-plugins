@@ -1,6 +1,6 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "gago",
+  "name": "gago-plugins",
   "description": "Personal plugin collection by gagoar",
   "owner": {
     "name": "gagoar",
