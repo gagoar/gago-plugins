@@ -1,35 +1,36 @@
 # gago-plugins
 
-Personal Claude Code plugin marketplace by [@gagoar](https://github.com/gagoar).
+A personal Claude Code plugin marketplace by [@gagoar](https://github.com/gagoar).
 
-## Install
+**Hub:** [gagoar.github.io/gago-plugins](https://gagoar.github.io/gago-plugins)
 
-Add the marketplace once:
-
-```
-/plugin marketplace add github:gagoar/gago-plugins
-```
-
-Then install any plugin:
+## Add the marketplace
 
 ```
-/plugin install iceberg@gago
-/plugin install html-effectiveness@gago
-/plugin install claude-memory-sync@gago
-/plugin install typescript-patterns-enforcer@gago
+/plugin marketplace add gagoar/gago-plugins
+/reload-plugins
+```
+
+## Install any plugin
+
+```
+/plugin install iceberg@gago-plugins
+/plugin install html@gago-plugins
+/plugin install memory-sync@gago-plugins
+/plugin install ts-patterns@gago-plugins
 ```
 
 ## Plugins
 
-| Plugin | Description |
-|--------|-------------|
-| [iceberg](https://github.com/gagoar/iceberg) | Apply Hemingway writing rules to technical docs |
-| [html-effectiveness](https://github.com/gagoar/html-effectiveness) | Generate rich self-contained HTML documents |
-| [claude-memory-sync](https://github.com/gagoar/claude-memory-sync) | Backup and sync Claude Code memory across machines |
-| [typescript-patterns-enforcer](https://github.com/gagoar/typescript-patterns-enforcer) | Enforce TypeScript best practices — skill + subagent |
+| Plugin | Invocation | Description | Docs |
+|--------|-----------|-------------|------|
+| [iceberg](https://github.com/gagoar/iceberg) | /iceberg:score · /iceberg:edit | Hemingway writing rules for technical docs | [gagoar.github.io/iceberg](https://gagoar.github.io/iceberg) |
+| [html](https://github.com/gagoar/html-effectiveness) | /html:doc | Rich self-contained HTML documents | [gagoar.github.io/html-effectiveness](https://gagoar.github.io/html-effectiveness) |
+| [memory-sync](https://github.com/gagoar/claude-memory-sync) | /memory-sync:sync | Claude Code memory backup and sync | [gagoar.github.io/claude-memory-sync](https://gagoar.github.io/claude-memory-sync) |
+| [ts-patterns](https://github.com/gagoar/typescript-patterns-enforcer) | /ts-patterns:check | TypeScript patterns enforcer | [gagoar.github.io/typescript-patterns-enforcer](https://gagoar.github.io/typescript-patterns-enforcer) |
 
 ## Adding a new plugin
 
-1. Create the plugin repo under `github:gagoar/<name>`
-2. Add an entry to `.claude-plugin/marketplace.json` with the latest `sha`
-3. Commit and push
+1. Create the plugin repo at gagoar/<name>
+2. Add an entry to .claude-plugin/marketplace.json
+3. Commit and push — the marketplace updates immediately
