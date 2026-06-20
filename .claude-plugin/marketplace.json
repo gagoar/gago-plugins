@@ -1,0 +1,63 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "gago",
+  "description": "Personal plugin collection by gagoar",
+  "owner": {
+    "name": "gagoar",
+    "url": "https://github.com/gagoar"
+  },
+  "plugins": [
+    {
+      "name": "iceberg",
+      "description": "Apply Hemingway writing rules to technical documentation — inline, intentional, clean.",
+      "author": { "name": "gagoar", "url": "https://github.com/gagoar" },
+      "homepage": "https://github.com/gagoar/iceberg",
+      "license": "MIT",
+      "keywords": ["writing", "documentation", "hemingway", "technical-writing", "style"],
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/gagoar/iceberg.git"
+      }
+    },
+    {
+      "name": "html-effectiveness",
+      "description": "Generate rich, self-contained HTML documents — reports, slide decks, code reviews, design systems, kanban boards.",
+      "author": { "name": "gagoar", "url": "https://github.com/gagoar" },
+      "homepage": "https://github.com/gagoar/html-effectiveness",
+      "license": "MIT",
+      "keywords": ["html", "documentation", "design-system", "slide-deck", "kanban"],
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/gagoar/html-effectiveness.git"
+      }
+    },
+    {
+      "name": "claude-memory-sync",
+      "description": "Push, pull, and diff Claude Code per-project memory between this machine and a Git repo of your choice.",
+      "author": { "name": "gagoar", "url": "https://github.com/gagoar" },
+      "homepage": "https://github.com/gagoar/claude-memory-sync",
+      "license": "MIT",
+      "keywords": ["memory", "backup", "sync", "git", "claude-code"],
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/gagoar/claude-memory-sync.git"
+      }
+    },
+    {
+      "name": "typescript-patterns-enforcer",
+      "description": "Enforce TypeScript best practices and patterns — inline skill guidance plus a dedicated subagent for reviews and refactors.",
+      "author": { "name": "gagoar", "url": "https://github.com/gagoar" },
+      "homepage": "https://github.com/gagoar/typescript-patterns-enforcer",
+      "license": "MIT",
+      "keywords": ["typescript", "patterns", "code-quality", "linting", "best-practices"],
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/gagoar/typescript-patterns-enforcer.git"
+      }
+    }
+  ]
+}
