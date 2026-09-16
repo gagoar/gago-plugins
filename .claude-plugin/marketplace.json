@@ -47,6 +47,19 @@
       }
     },
     {
+      "name": "deck-visuals",
+      "description": "Guide and inject impactful visuals into HTML decks — inline-SVG concept diagrams, dataviz charts, icon anchors, and GIF levity — without rendering the deck itself.",
+      "author": { "name": "gagoar", "url": "https://github.com/gagoar" },
+      "homepage": "https://github.com/gagoar/deck-visuals",
+      "license": "MIT",
+      "keywords": ["presentations", "slides", "dataviz", "visuals", "gif", "icons"],
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/gagoar/deck-visuals.git"
+      }
+    },
+    {
       "name": "ts-patterns",
       "description": "Enforce TypeScript best practices and patterns — inline skill guidance plus a dedicated subagent for reviews and refactors.",
       "author": { "name": "gagoar", "url": "https://github.com/gagoar" },
