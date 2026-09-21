@@ -71,6 +71,20 @@
         "source": "url",
         "url": "https://github.com/gagoar/typescript-patterns-enforcer.git"
       }
+    },
+    {
+      "name": "tricorder",
+      "description": "Always-on Claude Code session panel — PRs, running sub-agents and their model, the plan-file link, and an honest context gauge — plus configurable attention sounds with a mute toggle.",
+      "author": { "name": "gagoar", "url": "https://github.com/gagoar" },
+      "homepage": "https://github.com/gagoar/tricorder",
+      "license": "MIT",
+      "keywords": ["statusline", "menu-bar", "star-trek", "sounds", "iterm2", "macos"],
+      "category": "productivity",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/gagoar/tricorder.git",
+        "path": "plugin"
+      }
     }
   ]
 }
