@@ -75,12 +75,12 @@ code { font-family: var(--mono); font-size: 0.9em; background: var(--gray-150); 
 .profile-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-bottom: 24px; }
 @media (max-width: 640px) { .profile-cards { grid-template-columns: 1fr; } }
 .profile-card { background: var(--white); border: var(--border); border-radius: var(--radius-panel); padding: 18px 20px; display: flex; flex-direction: column; }
-.profile-card .profile-name { font-family: var(--serif); font-weight: 500; font-size: 16px; color: var(--slate); margin-bottom: 6px; text-decoration: none; }
-.profile-card .profile-name:hover { color: var(--clay); }
+.profile-card .profile-name { font-family: var(--serif); font-weight: 500; font-size: 16px; color: var(--slate); margin-bottom: 6px; }
 .profile-card .profile-types { font-family: var(--mono); font-size: 10.5px; color: var(--gray-500); margin-bottom: 10px; }
 .profile-card .profile-desc { font-size: 13px; color: var(--gray-700); line-height: 1.5; flex: 1; }
-.profile-card .profile-link { margin-top: 14px; font-family: var(--mono); font-size: 11px; color: var(--clay); text-decoration: none; }
-.profile-card .profile-link:hover { color: var(--clay-d); }
+.profile-card .profile-links { display: flex; gap: 16px; margin-top: 14px; }
+.profile-card .profile-links a { font-family: var(--mono); font-size: 11px; color: var(--clay); text-decoration: none; }
+.profile-card .profile-links a:hover { color: var(--clay-d); }
 
 .footer { border-top: var(--border); padding-top: 32px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
 .footer-links { display: flex; gap: 20px; }
@@ -136,40 +136,58 @@ code { font-family: var(--mono); font-size: 0.9em; background: var(--gray-150); 
         <h2>The plugins</h2>
         <div class="profile-cards">
           <div class="profile-card">
-            <a class="profile-name" href="https://github.com/gagoar/iceberg" target="_blank">iceberg</a>
+            <div class="profile-name">iceberg</div>
             <div class="profile-types">/iceberg:score · /iceberg:edit</div>
             <div class="profile-desc">Scores and rewrites technical documentation using 14 Hemingway-based rules. Runs automatically on every plan.</div>
-            <a class="profile-link" href="https://gagoar.github.io/iceberg" target="_blank">View docs →</a>
+            <div class="profile-links">
+              <a href="https://github.com/gagoar/iceberg" target="_blank">GitHub →</a>
+              <a href="https://gagoar.github.io/iceberg" target="_blank">Docs →</a>
+            </div>
           </div>
           <div class="profile-card">
-            <a class="profile-name" href="https://github.com/gagoar/html-effectiveness" target="_blank">html</a>
+            <div class="profile-name">html</div>
             <div class="profile-types">/html:doc</div>
             <div class="profile-desc">Generates rich, self-contained HTML reports, slide decks, kanban boards, and timelines in the Birchline design system.</div>
-            <a class="profile-link" href="https://gagoar.github.io/html-effectiveness" target="_blank">View docs →</a>
+            <div class="profile-links">
+              <a href="https://github.com/gagoar/html-effectiveness" target="_blank">GitHub →</a>
+              <a href="https://gagoar.github.io/html-effectiveness" target="_blank">Docs →</a>
+            </div>
           </div>
           <div class="profile-card">
-            <a class="profile-name" href="https://github.com/gagoar/claude-memory-sync" target="_blank">memory-sync</a>
+            <div class="profile-name">memory-sync</div>
             <div class="profile-types">/memory-sync:sync</div>
             <div class="profile-desc">Backs up and restores per-project Claude Code memory to a private Git repo. HOME-relative storage works across machines.</div>
-            <a class="profile-link" href="https://gagoar.github.io/claude-memory-sync" target="_blank">View docs →</a>
+            <div class="profile-links">
+              <a href="https://github.com/gagoar/claude-memory-sync" target="_blank">GitHub →</a>
+              <a href="https://gagoar.github.io/claude-memory-sync" target="_blank">Docs →</a>
+            </div>
           </div>
           <div class="profile-card">
-            <a class="profile-name" href="https://github.com/gagoar/typescript-patterns-enforcer" target="_blank">ts-patterns</a>
+            <div class="profile-name">ts-patterns</div>
             <div class="profile-types">/ts-patterns:check · ts-patterns:review</div>
             <div class="profile-desc">Enforces TypeScript best practices inline while editing, plus a dedicated subagent for PR reviews and refactors.</div>
-            <a class="profile-link" href="https://gagoar.github.io/typescript-patterns-enforcer" target="_blank">View docs →</a>
+            <div class="profile-links">
+              <a href="https://github.com/gagoar/typescript-patterns-enforcer" target="_blank">GitHub →</a>
+              <a href="https://gagoar.github.io/typescript-patterns-enforcer" target="_blank">Docs →</a>
+            </div>
           </div>
           <div class="profile-card">
-            <a class="profile-name" href="https://github.com/gagoar/deck-visuals" target="_blank">deck-visuals</a>
+            <div class="profile-name">deck-visuals</div>
             <div class="profile-types">auto — "add visuals to my deck"</div>
             <div class="profile-desc">Guides and injects impactful visuals into HTML decks — inline-SVG concept diagrams, dataviz-backed charts, icon anchors, and sourced-and-verified GIF levity — without rendering the deck itself.</div>
-            <a class="profile-link" href="https://gagoar.github.io/deck-visuals" target="_blank">View docs →</a>
+            <div class="profile-links">
+              <a href="https://github.com/gagoar/deck-visuals" target="_blank">GitHub →</a>
+              <a href="https://gagoar.github.io/deck-visuals" target="_blank">Docs →</a>
+            </div>
           </div>
           <div class="profile-card">
-            <a class="profile-name" href="https://github.com/gagoar/tricorder" target="_blank">tricorder</a>
+            <div class="profile-name">tricorder</div>
             <div class="profile-types">always-on (hooks)</div>
             <div class="profile-desc">Full sensor sweep of your Claude Code sessions — an always-on statusline, a Starfleet away-team view in your macOS menu bar, and configurable attention sounds. macOS + iTerm2.</div>
-            <a class="profile-link" href="https://gagoar.github.io/tricorder/" target="_blank">View docs →</a>
+            <div class="profile-links">
+              <a href="https://github.com/gagoar/tricorder" target="_blank">GitHub →</a>
+              <a href="https://gagoar.github.io/tricorder/" target="_blank">Docs →</a>
+            </div>
           </div>
         </div>
       </section>
