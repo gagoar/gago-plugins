@@ -96,7 +96,7 @@ code { font-family: var(--mono); font-size: 0.9em; background: var(--gray-150); 
     <div class="hero-eyebrow">Claude Code Marketplace</div>
     <h1>gago-plugins</h1>
     <p class="hero-subtitle">A personal collection of Claude Code plugins by gagoar.</p>
-    <div class="hero-summary">Add one marketplace, install any plugin. Each plugin lives in its own repo and updates independently. Four plugins covering writing quality, HTML documents, memory backup, and TypeScript enforcement.</div>
+    <div class="hero-summary">Add one marketplace, install any plugin. Each plugin lives in its own repo and updates independently. Six plugins covering writing quality, HTML documents, memory backup, TypeScript enforcement, deck visuals, and session observability.</div>
   </div>
 
   <div class="layout">
@@ -122,7 +122,9 @@ code { font-family: var(--mono); font-size: 0.9em; background: var(--gray-150); 
 <span style="color:var(--clay)">/plugin install</span> <span style="color:var(--olive)">iceberg@gago-plugins</span>
 <span style="color:var(--clay)">/plugin install</span> <span style="color:var(--olive)">html@gago-plugins</span>
 <span style="color:var(--clay)">/plugin install</span> <span style="color:var(--olive)">memory-sync@gago-plugins</span>
-<span style="color:var(--clay)">/plugin install</span> <span style="color:var(--olive)">ts-patterns@gago-plugins</span></pre>
+<span style="color:var(--clay)">/plugin install</span> <span style="color:var(--olive)">ts-patterns@gago-plugins</span>
+<span style="color:var(--clay)">/plugin install</span> <span style="color:var(--olive)">deck-visuals@gago-plugins</span>
+<span style="color:var(--clay)">/plugin install</span> <span style="color:var(--olive)">tricorder@gago-plugins</span></pre>
         </div>
         <div class="install-note">Plugins update when their own repo releases a new version. The marketplace itself never needs to change.</div>
       </section>
@@ -156,6 +158,18 @@ code { font-family: var(--mono); font-size: 0.9em; background: var(--gray-150); 
             <div class="profile-types">/ts-patterns:check · ts-patterns:review</div>
             <div class="profile-desc">Enforces TypeScript best practices inline while editing, plus a dedicated subagent for PR reviews and refactors.</div>
             <a class="profile-link" href="https://gagoar.github.io/typescript-patterns-enforcer" target="_blank">View docs →</a>
+          </div>
+          <div class="profile-card">
+            <a class="profile-name" href="https://github.com/gagoar/deck-visuals" target="_blank">deck-visuals</a>
+            <div class="profile-types">auto — "add visuals to my deck"</div>
+            <div class="profile-desc">Guides and injects impactful visuals into HTML decks — inline-SVG concept diagrams, dataviz-backed charts, icon anchors, and sourced-and-verified GIF levity — without rendering the deck itself.</div>
+            <a class="profile-link" href="https://gagoar.github.io/deck-visuals" target="_blank">View docs →</a>
+          </div>
+          <div class="profile-card">
+            <a class="profile-name" href="https://github.com/gagoar/tricorder" target="_blank">tricorder</a>
+            <div class="profile-types">always-on (hooks)</div>
+            <div class="profile-desc">Full sensor sweep of your Claude Code sessions — an always-on statusline, a Starfleet away-team view in your macOS menu bar, and configurable attention sounds. macOS + iTerm2.</div>
+            <a class="profile-link" href="https://gagoar.github.io/tricorder/" target="_blank">View docs →</a>
           </div>
         </div>
       </section>
