@@ -20,6 +20,7 @@ A personal Claude Code plugin marketplace by [@gagoar](https://github.com/gagoar
 /plugin install ts-patterns@gago-plugins
 /plugin install deck-visuals@gago-plugins
 /plugin install tricorder@gago-plugins
+/plugin install pr-brief@gago-plugins
 ```
 
 ## Plugins
@@ -32,6 +33,7 @@ A personal Claude Code plugin marketplace by [@gagoar](https://github.com/gagoar
 | [ts-patterns](https://github.com/gagoar/typescript-patterns-enforcer) | /ts-patterns:check | TypeScript patterns enforcer | [gagoar.github.io/typescript-patterns-enforcer](https://gagoar.github.io/typescript-patterns-enforcer) |
 | [deck-visuals](https://github.com/gagoar/deck-visuals) | auto — "add visuals to my deck" | Inline-SVG diagrams, dataviz charts, icons, and GIF levity for HTML decks | [gagoar.github.io/deck-visuals](https://gagoar.github.io/deck-visuals) |
 | [tricorder](https://github.com/gagoar/tricorder) | always-on (hooks) | Statusline + macOS menu-bar app for Claude Code sessions — context gauge, PRs, running sub-agents, attention sounds | [gagoar.github.io/tricorder](https://gagoar.github.io/tricorder/) |
+| [pr-brief](https://github.com/gagoar/pr-brief) | /pr-brief · gate hook | Readable PR descriptions: a brief, Input → Functions → Output diagrams, and a ranked review guide — plus a gate that blocks descriptions without them | [github.com/gagoar/pr-brief#readme](https://github.com/gagoar/pr-brief#readme) |
 
 ## Adding a new plugin
 
