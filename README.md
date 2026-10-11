@@ -35,6 +35,8 @@ A personal Claude Code plugin marketplace by [@gagoar](https://github.com/gagoar
 | [tricorder](https://github.com/gagoar/tricorder) | always-on (hooks) | Statusline + macOS menu-bar app for Claude Code sessions — context gauge, PRs, running sub-agents, attention sounds | [gagoar.github.io/tricorder](https://gagoar.github.io/tricorder/) |
 | [pr-brief](https://github.com/gagoar/pr-brief) | /pr-brief · gate hook | Readable PR descriptions: a brief, Input → Functions → Output diagrams, and a ranked review guide — plus a gate that blocks descriptions without them | [github.com/gagoar/pr-brief#readme](https://github.com/gagoar/pr-brief#readme) |
 
+> **Renamed:** `typescript-patterns-enforcer` was called `ts-patterns` before v0.5.0. If you installed the old name, run `/plugin uninstall ts-patterns@gago-plugins`, then install the new one.
+
 ## Adding a new plugin
 
 1. Create the plugin repo at gagoar/<name>
