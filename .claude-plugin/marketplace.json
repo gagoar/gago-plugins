@@ -60,7 +60,7 @@
       }
     },
     {
-      "name": "ts-patterns",
+      "name": "typescript-patterns-enforcer",
       "description": "Enforce TypeScript best practices and patterns — inline skill guidance plus a dedicated subagent for reviews and refactors.",
       "author": { "name": "gagoar", "url": "https://github.com/gagoar" },
       "homepage": "https://github.com/gagoar/typescript-patterns-enforcer",
