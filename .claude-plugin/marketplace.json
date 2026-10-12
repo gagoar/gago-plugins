@@ -111,6 +111,19 @@
         "source": "url",
         "url": "https://github.com/gagoar/unmistakable.git"
       }
+    },
+    {
+      "name": "plugin-directory-preflight",
+      "description": "Run the plugin directory's upload checks locally, read the scan report in a screenful, and pin a stubborn hold in about three uploads.",
+      "author": { "name": "gagoar", "url": "https://github.com/gagoar" },
+      "homepage": "https://github.com/gagoar/plugin-directory-preflight",
+      "license": "MIT",
+      "keywords": ["plugin-directory", "preflight", "upload-scan", "release", "lint"],
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/gagoar/plugin-directory-preflight.git"
+      }
     }
   ]
 }
