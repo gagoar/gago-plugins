@@ -98,6 +98,19 @@
         "source": "url",
         "url": "https://github.com/gagoar/pr-brief.git"
       }
+    },
+    {
+      "name": "unmistakable",
+      "description": "Rewrite English so an AI agent cannot misread it: tool descriptions, error messages, PR descriptions and agent instructions. Follows the ASD-STE100 rules and ships a deterministic linter.",
+      "author": { "name": "gagoar", "url": "https://github.com/gagoar" },
+      "homepage": "https://gagoar.github.io/unmistakable/",
+      "license": "MIT",
+      "keywords": ["writing", "technical-writing", "plain-english", "ste", "linter", "agents"],
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/gagoar/unmistakable.git"
+      }
     }
   ]
 }

@@ -21,6 +21,7 @@ A personal Claude Code plugin marketplace by [@gagoar](https://github.com/gagoar
 /plugin install deck-visuals@gago-plugins
 /plugin install tricorder@gago-plugins
 /plugin install pr-brief@gago-plugins
+/plugin install unmistakable@gago-plugins
 ```
 
 ## Plugins
@@ -34,6 +35,7 @@ A personal Claude Code plugin marketplace by [@gagoar](https://github.com/gagoar
 | [deck-visuals](https://github.com/gagoar/deck-visuals) | auto — "add visuals to my deck" | Inline-SVG diagrams, dataviz charts, icons, and GIF levity for HTML decks | [gagoar.github.io/deck-visuals](https://gagoar.github.io/deck-visuals) |
 | [tricorder](https://github.com/gagoar/tricorder) | always-on (hooks) | Statusline + macOS menu-bar app for Claude Code sessions — context gauge, PRs, running sub-agents, attention sounds | [gagoar.github.io/tricorder](https://gagoar.github.io/tricorder/) |
 | [pr-brief](https://github.com/gagoar/pr-brief) | /pr-brief · gate hook | Readable PR descriptions: a brief, Input → Functions → Output diagrams, and a ranked review guide — plus a gate that blocks descriptions without them | [github.com/gagoar/pr-brief#readme](https://github.com/gagoar/pr-brief#readme) |
+| [unmistakable](https://github.com/gagoar/unmistakable) | auto — "rewrite this so an agent cannot misread it" · /unmistakable:asd-ste100 | English an AI agent cannot misread: a rewrite skill and a linter that follow the ASD-STE100 rules | [gagoar.github.io/unmistakable](https://gagoar.github.io/unmistakable/) |
 
 > **Renamed:** `typescript-patterns-enforcer` was called `ts-patterns` before v0.5.0. If you installed the old name, run `/plugin uninstall ts-patterns@gago-plugins`, then install the new one.
 
