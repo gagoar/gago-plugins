@@ -95,8 +95,9 @@
       "keywords": ["pull-request", "code-review", "mermaid", "documentation", "gate"],
       "category": "productivity",
       "source": {
-        "source": "url",
-        "url": "https://github.com/gagoar/pr-brief.git"
+        "source": "git-subdir",
+        "url": "https://github.com/gagoar/pr-brief.git",
+        "path": "plugin"
       }
     },
     {
