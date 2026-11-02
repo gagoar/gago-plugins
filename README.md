@@ -23,6 +23,8 @@ A personal Claude Code plugin marketplace by [@gagoar](https://github.com/gagoar
 /plugin install pr-brief@gago-plugins
 /plugin install unmistakable@gago-plugins
 /plugin install plugin-directory-preflight@gago-plugins
+/plugin install foghorn@gago-plugins
+/plugin install greenhorn@gago-plugins
 ```
 
 ## Plugins
@@ -38,6 +40,8 @@ A personal Claude Code plugin marketplace by [@gagoar](https://github.com/gagoar
 | [pr-brief](https://github.com/gagoar/pr-brief) | /pr-brief · gate hook | Readable PR descriptions: a brief, Input → Functions → Output diagrams, and a ranked review guide — plus a gate that blocks descriptions without them | [github.com/gagoar/pr-brief#readme](https://github.com/gagoar/pr-brief#readme) |
 | [unmistakable](https://github.com/gagoar/unmistakable) | auto — "rewrite this so an agent cannot misread it" · /unmistakable:asd-ste100 | English an AI agent cannot misread: a rewrite skill and a linter that follow the ASD-STE100 rules | [gagoar.github.io/unmistakable](https://gagoar.github.io/unmistakable/) |
 | [plugin-directory-preflight](https://github.com/gagoar/plugin-directory-preflight) | /plugin-directory-preflight:check | Run the directory's upload checks locally, read the scan report in a screenful, and pin a stubborn hold | [gagoar.github.io/plugin-directory-preflight](https://gagoar.github.io/plugin-directory-preflight) |
+| [foghorn](https://github.com/gagoar/foghorn) | /foghorn:draft · /foghorn:check · /foghorn:voice | Technical release notes in a configurable voice: each entry says what changed, shows the old and new output, says who is affected and credits contributors | [gagoar.github.io/foghorn](https://gagoar.github.io/foghorn/) |
+| [greenhorn](https://github.com/gagoar/greenhorn) | /greenhorn:explain · /greenhorn:test | Rewrites technical text for a reader who has never seen your system: finds where a stranger gets lost, answers each gap from your code, leads with one real example | [gagoar.github.io/greenhorn](https://gagoar.github.io/greenhorn/) |
 
 > **Renamed:** `typescript-patterns-enforcer` was called `ts-patterns` before v0.5.0. If you installed the old name, run `/plugin uninstall ts-patterns@gago-plugins`, then install the new one.
 
