@@ -125,6 +125,32 @@
         "source": "url",
         "url": "https://github.com/gagoar/plugin-directory-preflight.git"
       }
+    },
+    {
+      "name": "greenhorn",
+      "description": "Explain it to someone who has never seen your system. Finds where a stranger gets lost in technical text, answers each gap from your code, and rewrites with one real example first.",
+      "author": { "name": "gagoar", "url": "https://github.com/gagoar" },
+      "homepage": "https://gagoar.github.io/greenhorn/",
+      "license": "MIT",
+      "keywords": ["technical-writing", "plain-language", "documentation", "onboarding", "pull-request", "jargon"],
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/gagoar/greenhorn.git"
+      }
+    },
+    {
+      "name": "foghorn",
+      "description": "Draft technical release notes for a tag range: what changed for a user, the old and new output, who is affected and how to check. A checker keeps the notes honest.",
+      "author": { "name": "gagoar", "url": "https://github.com/gagoar" },
+      "homepage": "https://gagoar.github.io/foghorn/",
+      "license": "MIT",
+      "keywords": ["release-notes", "changelog", "technical-writing", "releases", "semver"],
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/gagoar/foghorn.git"
+      }
     }
   ]
 }

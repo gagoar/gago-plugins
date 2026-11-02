@@ -23,6 +23,8 @@ A personal Claude Code plugin marketplace by [@gagoar](https://github.com/gagoar
 /plugin install pr-brief@gago-plugins
 /plugin install unmistakable@gago-plugins
 /plugin install plugin-directory-preflight@gago-plugins
+/plugin install greenhorn@gago-plugins
+/plugin install foghorn@gago-plugins
 ```
 
 ## Plugins
@@ -38,6 +40,8 @@ A personal Claude Code plugin marketplace by [@gagoar](https://github.com/gagoar
 | [pr-brief](https://github.com/gagoar/pr-brief) | /pr-brief · gate hook | Readable PR descriptions: a brief, Input → Functions → Output diagrams, and a ranked review guide — plus a gate that blocks descriptions without them | [github.com/gagoar/pr-brief#readme](https://github.com/gagoar/pr-brief#readme) |
 | [unmistakable](https://github.com/gagoar/unmistakable) | auto — "rewrite this so an agent cannot misread it" · /unmistakable:asd-ste100 | English an AI agent cannot misread: a rewrite skill and a linter that follow the ASD-STE100 rules | [gagoar.github.io/unmistakable](https://gagoar.github.io/unmistakable/) |
 | [plugin-directory-preflight](https://github.com/gagoar/plugin-directory-preflight) | /plugin-directory-preflight:check | Run the directory's upload checks locally, read the scan report in a screenful, and pin a stubborn hold | [gagoar.github.io/plugin-directory-preflight](https://gagoar.github.io/plugin-directory-preflight) |
+| [greenhorn](https://github.com/gagoar/greenhorn) | /greenhorn:explain · /greenhorn:test | Explain technical text to someone who has never seen your system: find where a stranger gets lost, answer each gap from your code, rewrite with a real example first | [gagoar.github.io/greenhorn](https://gagoar.github.io/greenhorn/) |
+| [foghorn](https://github.com/gagoar/foghorn) | /foghorn:draft · /foghorn:check · /foghorn:voice | Draft technical release notes for a tag range: what changed for a user, old and new output, who is affected, how to check | [gagoar.github.io/foghorn](https://gagoar.github.io/foghorn/) |
 
 > **Renamed:** `typescript-patterns-enforcer` was called `ts-patterns` before v0.5.0. If you installed the old name, run `/plugin uninstall ts-patterns@gago-plugins`, then install the new one.
 
