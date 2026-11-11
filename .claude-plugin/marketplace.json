@@ -109,8 +109,9 @@
       "keywords": ["writing", "technical-writing", "plain-english", "ste", "linter", "agents"],
       "category": "productivity",
       "source": {
-        "source": "url",
-        "url": "https://github.com/gagoar/unmistakable.git"
+        "source": "git-subdir",
+        "url": "https://github.com/gagoar/unmistakable.git",
+        "path": "plugins/unmistakable"
       }
     },
     {
