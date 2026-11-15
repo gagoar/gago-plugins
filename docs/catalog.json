@@ -1,0 +1,116 @@
+{
+  "name": "gago-plugins",
+  "owner": "gagoar",
+  "plugins": [
+    {
+      "name": "iceberg",
+      "title": "iceberg",
+      "repo": "https://github.com/gagoar/iceberg",
+      "docs": "https://gagoar.github.io/iceberg",
+      "description": "Apply Hemingway writing rules to technical documentation — inline, intentional, clean.",
+      "summary": "Hemingway writing rules for technical docs",
+      "invocation": "/iceberg:score · /iceberg:edit",
+      "category": "productivity"
+    },
+    {
+      "name": "html",
+      "title": "html",
+      "repo": "https://github.com/gagoar/html-effectiveness",
+      "docs": "https://gagoar.github.io/html-effectiveness",
+      "description": "Generate rich, self-contained HTML documents — reports, slide decks, code reviews, design systems, kanban boards.",
+      "summary": "Rich self-contained HTML documents",
+      "invocation": "/html:doc",
+      "category": "productivity"
+    },
+    {
+      "name": "memory-sync",
+      "title": "memory-sync",
+      "repo": "https://github.com/gagoar/claude-memory-sync",
+      "docs": "https://gagoar.github.io/claude-memory-sync",
+      "description": "Push, pull, and diff Claude Code per-project memory between this machine and a Git repo of your choice.",
+      "summary": "Claude Code memory backup and sync",
+      "invocation": "/memory-sync:sync",
+      "category": "productivity"
+    },
+    {
+      "name": "deck-visuals",
+      "title": "deck-visuals",
+      "repo": "https://github.com/gagoar/deck-visuals",
+      "docs": "https://gagoar.github.io/deck-visuals",
+      "description": "Guide and inject impactful visuals into HTML decks — inline-SVG concept diagrams, dataviz charts, icon anchors, and GIF levity — without rendering the deck itself.",
+      "summary": "Inline-SVG diagrams, dataviz charts, icons, and GIF levity for HTML decks",
+      "invocation": "auto — \"add visuals to my deck\"",
+      "category": "productivity"
+    },
+    {
+      "name": "typescript-patterns-enforcer",
+      "title": "TypeScript Patterns Enforcer",
+      "repo": "https://github.com/gagoar/typescript-patterns-enforcer",
+      "docs": "https://gagoar.github.io/typescript-patterns-enforcer",
+      "description": "Enforce TypeScript best practices and patterns — inline skill guidance plus a dedicated subagent for reviews and refactors.",
+      "summary": "TypeScript patterns enforcer",
+      "invocation": "/typescript-patterns-enforcer:check · typescript-patterns-enforcer:review",
+      "category": "productivity"
+    },
+    {
+      "name": "tricorder",
+      "title": "tricorder",
+      "repo": "https://github.com/gagoar/tricorder",
+      "docs": "https://gagoar.github.io/tricorder/",
+      "description": "Always-on Claude Code session panel — PRs, running sub-agents and their model, the plan-file link, and an honest context gauge — plus configurable attention sounds with a mute toggle.",
+      "summary": "Statusline + macOS menu-bar app for Claude Code sessions — context gauge, PRs, running sub-agents, attention sounds",
+      "invocation": "always-on (hooks)",
+      "category": "productivity"
+    },
+    {
+      "name": "pr-brief",
+      "title": "pr-brief",
+      "repo": "https://github.com/gagoar/pr-brief",
+      "docs": "https://gagoar.github.io/pr-brief/",
+      "description": "Give every pull request a readable description: a short brief, Input to Functions to Output diagrams, and a ranked list of files to review first. Includes a gate that blocks descriptions without them.",
+      "summary": "Readable PR descriptions: a brief, Input → Functions → Output diagrams, and a ranked review guide — plus a gate that blocks descriptions without them",
+      "invocation": "/pr-brief · gate hook",
+      "category": "productivity"
+    },
+    {
+      "name": "unmistakable",
+      "title": "unmistakable",
+      "repo": "https://github.com/gagoar/unmistakable",
+      "docs": "https://gagoar.github.io/unmistakable/",
+      "description": "Rewrite English so an AI agent cannot misread it: tool descriptions, error messages, PR descriptions and agent instructions. Follows the ASD-STE100 rules and ships a deterministic linter.",
+      "summary": "English an AI agent cannot misread: a rewrite skill and a linter that follow the ASD-STE100 rules",
+      "invocation": "auto · /unmistakable:asd-ste100",
+      "category": "productivity"
+    },
+    {
+      "name": "plugin-directory-preflight",
+      "title": "Plugin Directory Preflight",
+      "repo": "https://github.com/gagoar/plugin-directory-preflight",
+      "docs": "https://gagoar.github.io/plugin-directory-preflight",
+      "description": "Run the plugin directory's upload checks locally, read the scan report in a screenful, and pin a stubborn hold in about three uploads.",
+      "summary": "Run the directory's upload checks locally, read the scan report in a screenful, and pin a stubborn hold",
+      "invocation": "/plugin-directory-preflight:check",
+      "category": "productivity"
+    },
+    {
+      "name": "foghorn",
+      "title": "foghorn",
+      "repo": "https://github.com/gagoar/foghorn",
+      "docs": "https://gagoar.github.io/foghorn/",
+      "description": "Write technical release notes: entries that say what changed for a user, show the old and new output, say who is affected and credit the people who helped. A configurable voice, a drafting skill and a checker.",
+      "summary": "Technical release notes in a configurable voice: each entry says what changed, shows the old and new output, says who is affected and credits contributors",
+      "invocation": "/foghorn:draft · /foghorn:check · /foghorn:voice",
+      "category": "productivity"
+    },
+    {
+      "name": "greenhorn",
+      "title": "greenhorn",
+      "repo": "https://github.com/gagoar/greenhorn",
+      "docs": "https://gagoar.github.io/greenhorn/",
+      "description": "Rewrites technical text for a reader who has never seen your system. It finds where a stranger gets lost, answers each gap from your code, and puts one real example first.",
+      "summary": "Rewrites technical text for a reader who has never seen your system: finds where a stranger gets lost, answers each gap from your code, leads with one real example",
+      "invocation": "/greenhorn:explain · /greenhorn:test",
+      "category": "productivity"
+    }
+  ]
+}

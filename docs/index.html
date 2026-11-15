@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#FAF9F5">
 <title>gago-plugins — a personal Claude Code marketplace</title>
 <style>
 :root {
@@ -87,6 +88,33 @@ code { font-family: var(--mono); font-size: 0.9em; background: var(--gray-150); 
 .footer-links a { font-size: 13px; color: var(--gray-500); text-decoration: none; }
 .footer-links a:hover { color: var(--slate); }
 .footer-meta { font-family: var(--mono); font-size: 11px; color: var(--gray-500); }
+
+/* ---- mobile ---- */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+.jump { display: none; }
+.copy { position: absolute; top: 8px; right: 8px; min-width: 44px; min-height: 44px; padding: 0 12px; font: 600 12px var(--mono); color: #E8E6DE; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.25); border-radius: 8px; cursor: pointer; }
+.copy:hover, .copy:focus-visible { background: rgba(255,255,255,0.2); }
+.install-card { position: relative; }
+.install-card pre { overflow-x: auto; -webkit-overflow-scrolling: touch; padding-right: 64px; }
+@media (max-width: 760px) {
+  body { padding: 16px 16px 64px; font-size: 16px; }
+  h1 { font-size: 30px; }
+  .hero, .section { margin-bottom: 36px; }
+  .hero-subtitle { font-size: 17px; }
+  .hero-summary { font-size: 15px; padding: 14px 16px; }
+  .jump { display: flex; gap: 8px; overflow-x: auto; position: sticky; top: 0; z-index: 5; margin: 0 -16px 24px; padding: 10px 16px; background: var(--ivory); border-bottom: var(--border); }
+  .jump a { flex: none; display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; font-size: 14px; color: var(--slate); text-decoration: none; background: var(--white); border: var(--border); border-radius: 999px; }
+  .section { scroll-margin-top: 80px; }
+  .install-card { padding: 16px; }
+  .install-card pre { font-size: 12.5px; }
+  .profile-card .profile-desc { font-size: 15px; }
+  .profile-card .profile-types { font-size: 12px; overflow-wrap: anywhere; }
+  .profile-card .profile-links { gap: 8px; }
+  .profile-card .profile-links a { display: inline-flex; align-items: center; min-height: 44px; padding-right: 12px; font-size: 13px; }
+  .callout-list li { flex-direction: column; gap: 6px; }
+  .footer-links { flex-wrap: wrap; gap: 4px 20px; }
+  .footer-links a { display: inline-flex; align-items: center; min-height: 44px; }
+}
 </style>
 </head>
 <body>
@@ -96,8 +124,14 @@ code { font-family: var(--mono); font-size: 0.9em; background: var(--gray-150); 
     <div class="hero-eyebrow">Claude Code Marketplace</div>
     <h1>gago-plugins</h1>
     <p class="hero-subtitle">A personal collection of Claude Code plugins by gagoar.</p>
-    <div class="hero-summary">Add one marketplace, install any plugin. Each plugin lives in its own repo and updates independently. Eight plugins covering writing quality, HTML documents, memory backup, TypeScript enforcement, deck visuals, session observability, pull request descriptions, and plugin upload checks.</div>
+    <div class="hero-summary">Add one marketplace, install any plugin. Each plugin lives in its own repo and updates independently. <!-- hub-count:start -->11 plugins<!-- hub-count:end --> for writing, documentation, code review, release notes, and session tooling.</div>
   </div>
+
+  <nav class="jump" aria-label="Jump to section">
+    <a href="#install">Install</a>
+    <a href="#plugins">Plugins</a>
+    <a href="#independence">Updates</a>
+  </nav>
 
   <div class="layout">
     <nav class="toc" id="toc">
@@ -119,17 +153,17 @@ code { font-family: var(--mono); font-size: 0.9em; background: var(--gray-150); 
         </div>
         <div class="install-card">
           <pre><span style="color:var(--gray-500)"># then install any plugin</span>
-<span style="color:var(--clay)">/plugin install</span> <span style="color:var(--olive)">iceberg@gago-plugins</span>
+<!-- hub-install:start --><span style="color:var(--clay)">/plugin install</span> <span style="color:var(--olive)">iceberg@gago-plugins</span>
 <span style="color:var(--clay)">/plugin install</span> <span style="color:var(--olive)">html@gago-plugins</span>
 <span style="color:var(--clay)">/plugin install</span> <span style="color:var(--olive)">memory-sync@gago-plugins</span>
-<span style="color:var(--clay)">/plugin install</span> <span style="color:var(--olive)">typescript-patterns-enforcer@gago-plugins</span>
 <span style="color:var(--clay)">/plugin install</span> <span style="color:var(--olive)">deck-visuals@gago-plugins</span>
+<span style="color:var(--clay)">/plugin install</span> <span style="color:var(--olive)">typescript-patterns-enforcer@gago-plugins</span>
 <span style="color:var(--clay)">/plugin install</span> <span style="color:var(--olive)">tricorder@gago-plugins</span>
 <span style="color:var(--clay)">/plugin install</span> <span style="color:var(--olive)">pr-brief@gago-plugins</span>
 <span style="color:var(--clay)">/plugin install</span> <span style="color:var(--olive)">unmistakable@gago-plugins</span>
 <span style="color:var(--clay)">/plugin install</span> <span style="color:var(--olive)">plugin-directory-preflight@gago-plugins</span>
 <span style="color:var(--clay)">/plugin install</span> <span style="color:var(--olive)">foghorn@gago-plugins</span>
-<span style="color:var(--clay)">/plugin install</span> <span style="color:var(--olive)">greenhorn@gago-plugins</span></pre>
+<span style="color:var(--clay)">/plugin install</span> <span style="color:var(--olive)">greenhorn@gago-plugins</span><!-- hub-install:end --></pre>
         </div>
         <div class="install-note">Plugins update when their own repo releases a new version. The marketplace itself never needs to change.</div>
       </section>
@@ -140,13 +174,14 @@ code { font-family: var(--mono); font-size: 0.9em; background: var(--gray-150); 
         <div class="eyebrow">Available plugins</div>
         <h2>The plugins</h2>
         <div class="profile-cards">
+<!-- hub-cards:start -->
           <div class="profile-card">
             <div class="profile-name">iceberg</div>
             <div class="profile-types">/iceberg:score · /iceberg:edit</div>
             <div class="profile-desc">Scores and rewrites technical documentation using 14 Hemingway-based rules. Runs automatically on every plan.</div>
             <div class="profile-links">
-              <a href="https://github.com/gagoar/iceberg" target="_blank">GitHub →</a>
-              <a href="https://gagoar.github.io/iceberg" target="_blank">Docs →</a>
+              <a href="https://github.com/gagoar/iceberg" target="_blank" rel="noopener">GitHub →</a>
+              <a href="https://gagoar.github.io/iceberg" target="_blank" rel="noopener">Docs →</a>
             </div>
           </div>
           <div class="profile-card">
@@ -154,8 +189,8 @@ code { font-family: var(--mono); font-size: 0.9em; background: var(--gray-150); 
             <div class="profile-types">/html:doc</div>
             <div class="profile-desc">Generates rich, self-contained HTML reports, slide decks, kanban boards, and timelines in the Birchline design system.</div>
             <div class="profile-links">
-              <a href="https://github.com/gagoar/html-effectiveness" target="_blank">GitHub →</a>
-              <a href="https://gagoar.github.io/html-effectiveness" target="_blank">Docs →</a>
+              <a href="https://github.com/gagoar/html-effectiveness" target="_blank" rel="noopener">GitHub →</a>
+              <a href="https://gagoar.github.io/html-effectiveness" target="_blank" rel="noopener">Docs →</a>
             </div>
           </div>
           <div class="profile-card">
@@ -163,8 +198,17 @@ code { font-family: var(--mono); font-size: 0.9em; background: var(--gray-150); 
             <div class="profile-types">/memory-sync:sync</div>
             <div class="profile-desc">Backs up and restores per-project Claude Code memory to a private Git repo. HOME-relative storage works across machines.</div>
             <div class="profile-links">
-              <a href="https://github.com/gagoar/claude-memory-sync" target="_blank">GitHub →</a>
-              <a href="https://gagoar.github.io/claude-memory-sync" target="_blank">Docs →</a>
+              <a href="https://github.com/gagoar/claude-memory-sync" target="_blank" rel="noopener">GitHub →</a>
+              <a href="https://gagoar.github.io/claude-memory-sync" target="_blank" rel="noopener">Docs →</a>
+            </div>
+          </div>
+          <div class="profile-card">
+            <div class="profile-name">deck-visuals</div>
+            <div class="profile-types">auto — &quot;add visuals to my deck&quot;</div>
+            <div class="profile-desc">Guides and injects impactful visuals into HTML decks — inline-SVG concept diagrams, dataviz-backed charts, icon anchors, and sourced-and-verified GIF levity — without rendering the deck itself.</div>
+            <div class="profile-links">
+              <a href="https://github.com/gagoar/deck-visuals" target="_blank" rel="noopener">GitHub →</a>
+              <a href="https://gagoar.github.io/deck-visuals" target="_blank" rel="noopener">Docs →</a>
             </div>
           </div>
           <div class="profile-card">
@@ -172,17 +216,8 @@ code { font-family: var(--mono); font-size: 0.9em; background: var(--gray-150); 
             <div class="profile-types">/typescript-patterns-enforcer:check · typescript-patterns-enforcer:review</div>
             <div class="profile-desc">Enforces TypeScript best practices inline while editing, plus a dedicated subagent for PR reviews and refactors. Formerly ts-patterns.</div>
             <div class="profile-links">
-              <a href="https://github.com/gagoar/typescript-patterns-enforcer" target="_blank">GitHub →</a>
-              <a href="https://gagoar.github.io/typescript-patterns-enforcer" target="_blank">Docs →</a>
-            </div>
-          </div>
-          <div class="profile-card">
-            <div class="profile-name">deck-visuals</div>
-            <div class="profile-types">auto — "add visuals to my deck"</div>
-            <div class="profile-desc">Guides and injects impactful visuals into HTML decks — inline-SVG concept diagrams, dataviz-backed charts, icon anchors, and sourced-and-verified GIF levity — without rendering the deck itself.</div>
-            <div class="profile-links">
-              <a href="https://github.com/gagoar/deck-visuals" target="_blank">GitHub →</a>
-              <a href="https://gagoar.github.io/deck-visuals" target="_blank">Docs →</a>
+              <a href="https://github.com/gagoar/typescript-patterns-enforcer" target="_blank" rel="noopener">GitHub →</a>
+              <a href="https://gagoar.github.io/typescript-patterns-enforcer" target="_blank" rel="noopener">Docs →</a>
             </div>
           </div>
           <div class="profile-card">
@@ -190,8 +225,8 @@ code { font-family: var(--mono); font-size: 0.9em; background: var(--gray-150); 
             <div class="profile-types">always-on (hooks)</div>
             <div class="profile-desc">Full sensor sweep of your Claude Code sessions — an always-on statusline, a Starfleet away-team view in your macOS menu bar, and configurable attention sounds. macOS + iTerm2.</div>
             <div class="profile-links">
-              <a href="https://github.com/gagoar/tricorder" target="_blank">GitHub →</a>
-              <a href="https://gagoar.github.io/tricorder/" target="_blank">Docs →</a>
+              <a href="https://github.com/gagoar/tricorder" target="_blank" rel="noopener">GitHub →</a>
+              <a href="https://gagoar.github.io/tricorder/" target="_blank" rel="noopener">Docs →</a>
             </div>
           </div>
           <div class="profile-card">
@@ -199,8 +234,8 @@ code { font-family: var(--mono); font-size: 0.9em; background: var(--gray-150); 
             <div class="profile-types">/pr-brief · gate hook</div>
             <div class="profile-desc">Makes large pull requests readable — a short brief, Input → Functions → Output diagrams, and a ranked list of the files to review first — and blocks PR descriptions that lack them.</div>
             <div class="profile-links">
-              <a href="https://github.com/gagoar/pr-brief" target="_blank">GitHub →</a>
-              <a href="https://gagoar.github.io/pr-brief/" target="_blank">Docs →</a>
+              <a href="https://github.com/gagoar/pr-brief" target="_blank" rel="noopener">GitHub →</a>
+              <a href="https://gagoar.github.io/pr-brief/" target="_blank" rel="noopener">Docs →</a>
             </div>
           </div>
           <div class="profile-card">
@@ -208,8 +243,8 @@ code { font-family: var(--mono); font-size: 0.9em; background: var(--gray-150); 
             <div class="profile-types">auto · /unmistakable:asd-ste100</div>
             <div class="profile-desc">Rewrites English so an AI agent cannot misread it — tool descriptions, error messages, PR text — and checks the result with a linter. Follows the ASD-STE100 rules.</div>
             <div class="profile-links">
-              <a href="https://github.com/gagoar/unmistakable" target="_blank">GitHub →</a>
-              <a href="https://gagoar.github.io/unmistakable/" target="_blank">Docs →</a>
+              <a href="https://github.com/gagoar/unmistakable" target="_blank" rel="noopener">GitHub →</a>
+              <a href="https://gagoar.github.io/unmistakable/" target="_blank" rel="noopener">Docs →</a>
             </div>
           </div>
           <div class="profile-card">
@@ -217,8 +252,8 @@ code { font-family: var(--mono); font-size: 0.9em; background: var(--gray-150); 
             <div class="profile-types">/plugin-directory-preflight:check</div>
             <div class="profile-desc">Runs the plugin directory's upload checks on your machine, reads the scan report in a screenful, and pins a stubborn hold with a throwaway probe repo in about three uploads.</div>
             <div class="profile-links">
-              <a href="https://github.com/gagoar/plugin-directory-preflight" target="_blank">GitHub →</a>
-              <a href="https://gagoar.github.io/plugin-directory-preflight" target="_blank">Docs →</a>
+              <a href="https://github.com/gagoar/plugin-directory-preflight" target="_blank" rel="noopener">GitHub →</a>
+              <a href="https://gagoar.github.io/plugin-directory-preflight" target="_blank" rel="noopener">Docs →</a>
             </div>
           </div>
           <div class="profile-card">
@@ -226,8 +261,8 @@ code { font-family: var(--mono); font-size: 0.9em; background: var(--gray-150); 
             <div class="profile-types">/foghorn:draft · /foghorn:check · /foghorn:voice</div>
             <div class="profile-desc">Drafts release notes for a tag range in a configurable voice. Each entry says what changed, shows the old and new output, says who is affected and credits the people who helped. A checker lints the result.</div>
             <div class="profile-links">
-              <a href="https://github.com/gagoar/foghorn" target="_blank">GitHub →</a>
-              <a href="https://gagoar.github.io/foghorn/" target="_blank">Docs →</a>
+              <a href="https://github.com/gagoar/foghorn" target="_blank" rel="noopener">GitHub →</a>
+              <a href="https://gagoar.github.io/foghorn/" target="_blank" rel="noopener">Docs →</a>
             </div>
           </div>
           <div class="profile-card">
@@ -235,10 +270,11 @@ code { font-family: var(--mono); font-size: 0.9em; background: var(--gray-150); 
             <div class="profile-types">/greenhorn:explain · /greenhorn:test</div>
             <div class="profile-desc">Rewrites technical text for a reader who has never seen your system. A cold reader finds where a stranger gets lost, each gap is answered from your code, and one real example comes first.</div>
             <div class="profile-links">
-              <a href="https://github.com/gagoar/greenhorn" target="_blank">GitHub →</a>
-              <a href="https://gagoar.github.io/greenhorn/" target="_blank">Docs →</a>
+              <a href="https://github.com/gagoar/greenhorn" target="_blank" rel="noopener">GitHub →</a>
+              <a href="https://gagoar.github.io/greenhorn/" target="_blank" rel="noopener">Docs →</a>
             </div>
           </div>
+<!-- hub-cards:end -->
         </div>
       </section>
 
@@ -278,6 +314,33 @@ const observer = new IntersectionObserver(entries => {
   });
 }, { rootMargin: '-20% 0px -70% 0px' });
 sections.forEach(s => observer.observe(s));
+
+// Copy buttons on install blocks. Skips the "# comment" line so the paste runs as-is.
+document.querySelectorAll('.install-card').forEach(card => {
+  const pre = card.querySelector('pre');
+  if (!pre) return;
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'copy';
+  btn.textContent = 'Copy';
+  btn.setAttribute('aria-label', 'Copy install commands');
+  btn.addEventListener('click', async () => {
+    const text = pre.textContent.split('\n').filter(l => l.trim() && !l.trim().startsWith('#')).join('\n');
+    try {
+      await navigator.clipboard.writeText(text);
+      btn.textContent = 'Copied';
+    } catch {
+      const range = document.createRange();
+      range.selectNodeContents(pre);
+      const sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+      btn.textContent = 'Selected';
+    }
+    setTimeout(() => { btn.textContent = 'Copy'; }, 1500);
+  });
+  card.appendChild(btn);
+});
 </script>
 </body>
 </html>
