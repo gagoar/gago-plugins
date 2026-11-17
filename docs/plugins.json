@@ -1,0 +1,82 @@
+{
+  "_comment": "Display data for the hub page and README. Install details live in .claude-plugin/marketplace.json. Keys must match marketplace plugin names. Run `node scripts/sync.mjs` after editing.",
+  "plugins": {
+    "iceberg": {
+      "title": "iceberg",
+      "invocation": "/iceberg:score · /iceberg:edit",
+      "summary": "Hemingway writing rules for technical docs",
+      "blurb": "Scores and rewrites technical documentation using 14 Hemingway-based rules. Runs automatically on every plan.",
+      "docs": "https://gagoar.github.io/iceberg"
+    },
+    "html": {
+      "title": "html",
+      "invocation": "/html:doc",
+      "summary": "Rich self-contained HTML documents",
+      "blurb": "Generates rich, self-contained HTML reports, slide decks, kanban boards, and timelines in the Birchline design system.",
+      "docs": "https://gagoar.github.io/html-effectiveness"
+    },
+    "memory-sync": {
+      "title": "memory-sync",
+      "invocation": "/memory-sync:sync",
+      "summary": "Claude Code memory backup and sync",
+      "blurb": "Backs up and restores per-project Claude Code memory to a private Git repo. HOME-relative storage works across machines.",
+      "docs": "https://gagoar.github.io/claude-memory-sync"
+    },
+    "typescript-patterns-enforcer": {
+      "title": "TypeScript Patterns Enforcer",
+      "invocation": "/typescript-patterns-enforcer:check · typescript-patterns-enforcer:review",
+      "summary": "TypeScript patterns enforcer",
+      "blurb": "Enforces TypeScript best practices inline while editing, plus a dedicated subagent for PR reviews and refactors. Formerly ts-patterns.",
+      "docs": "https://gagoar.github.io/typescript-patterns-enforcer"
+    },
+    "deck-visuals": {
+      "title": "deck-visuals",
+      "invocation": "auto — \"add visuals to my deck\"",
+      "summary": "Inline-SVG diagrams, dataviz charts, icons, and GIF levity for HTML decks",
+      "blurb": "Guides and injects impactful visuals into HTML decks — inline-SVG concept diagrams, dataviz-backed charts, icon anchors, and sourced-and-verified GIF levity — without rendering the deck itself.",
+      "docs": "https://gagoar.github.io/deck-visuals"
+    },
+    "tricorder": {
+      "title": "tricorder",
+      "invocation": "always-on (hooks)",
+      "summary": "Statusline + macOS menu-bar app for Claude Code sessions — context gauge, PRs, running sub-agents, attention sounds",
+      "blurb": "Full sensor sweep of your Claude Code sessions — an always-on statusline, a Starfleet away-team view in your macOS menu bar, and configurable attention sounds. macOS + iTerm2.",
+      "docs": "https://gagoar.github.io/tricorder/"
+    },
+    "pr-brief": {
+      "title": "pr-brief",
+      "invocation": "/pr-brief · gate hook",
+      "summary": "Readable PR descriptions: a brief, Input → Functions → Output diagrams, and a ranked review guide — plus a gate that blocks descriptions without them",
+      "blurb": "Makes large pull requests readable — a short brief, Input → Functions → Output diagrams, and a ranked list of the files to review first — and blocks PR descriptions that lack them.",
+      "docs": "https://gagoar.github.io/pr-brief/"
+    },
+    "unmistakable": {
+      "title": "unmistakable",
+      "invocation": "auto · /unmistakable:asd-ste100",
+      "summary": "English an AI agent cannot misread: a rewrite skill and a linter that follow the ASD-STE100 rules",
+      "blurb": "Rewrites English so an AI agent cannot misread it — tool descriptions, error messages, PR text — and checks the result with a linter. Follows the ASD-STE100 rules.",
+      "docs": "https://gagoar.github.io/unmistakable/"
+    },
+    "plugin-directory-preflight": {
+      "title": "Plugin Directory Preflight",
+      "invocation": "/plugin-directory-preflight:check",
+      "summary": "Run the directory's upload checks locally, read the scan report in a screenful, and pin a stubborn hold",
+      "blurb": "Runs the plugin directory's upload checks on your machine, reads the scan report in a screenful, and pins a stubborn hold with a throwaway probe repo in about three uploads.",
+      "docs": "https://gagoar.github.io/plugin-directory-preflight"
+    },
+    "foghorn": {
+      "title": "foghorn",
+      "invocation": "/foghorn:draft · /foghorn:check · /foghorn:voice",
+      "summary": "Technical release notes in a configurable voice: each entry says what changed, shows the old and new output, says who is affected and credits contributors",
+      "blurb": "Drafts release notes for a tag range in a configurable voice. Each entry says what changed, shows the old and new output, says who is affected and credits the people who helped. A checker lints the result.",
+      "docs": "https://gagoar.github.io/foghorn/"
+    },
+    "greenhorn": {
+      "title": "greenhorn",
+      "invocation": "/greenhorn:explain · /greenhorn:test",
+      "summary": "Rewrites technical text for a reader who has never seen your system: finds where a stranger gets lost, answers each gap from your code, leads with one real example",
+      "blurb": "Rewrites technical text for a reader who has never seen your system. A cold reader finds where a stranger gets lost, each gap is answered from your code, and one real example comes first.",
+      "docs": "https://gagoar.github.io/greenhorn/"
+    }
+  }
+}
